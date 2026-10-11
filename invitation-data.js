@@ -16,9 +16,21 @@ const invitationData = {
     hotelGulzar: 'Hotel Gulzar'
   },
   contacts: {
-    kishoreKuti: {
-      venueId: 'kishoreKuti',
-      numbers: ['+91-9425025656', '+91-8989958989']
+    family: {
+      label: {
+        en: 'Family contacts',
+        hi: 'परिवार के संपर्क'
+      },
+      people: [
+        {
+          name: { en: 'Sushant Kumar Dubey', hi: 'श्री सुशांत कुमार दुबे' },
+          number: '+91-9425025656'
+        },
+        {
+          name: { en: 'Niharika Dubey', hi: 'श्रीमती निहारिका दुबे' },
+          number: '+91-8989958989'
+        }
+      ]
     },
     hotelGulzar: {
       venueId: 'hotelGulzar',
@@ -45,7 +57,7 @@ const invitationData = {
       },
       bride: {
         label: 'वधू के माता-पिता',
-        parents: ['श्रीमती निहारिका दुबे', 'श्री सुषांत कुमार दुबे']
+        parents: ['श्रीमती निहारिका दुबे', 'श्री सुशांत कुमार दुबे']
       }
     }
   },

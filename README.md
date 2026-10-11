@@ -4,9 +4,9 @@ This is a static, GitHub Pages-compatible invitation. Ceremony details, dates, t
 
 ## Site
 - `index.html`, `styles.css`, and `app.js` implement the bilingual invitation and responsive presentation.
-- `preview.jpg` is used once as the opening artwork. The Moments section is text-led so the artwork is not repeated.
+- `preview.jpg` supplies the hero artwork.
 - The summary countdown targets the Sunday wedding ceremony start stored in the event data (6 December 2026, 9:00 AM IST).
-- Venue directions, the consolidated contact panel, WhatsApp sharing, the language selector, opening replay, and the ten-event calendar download remain available.
+- Venue directions, the contact panel, WhatsApp sharing, language toggle, and ten-event calendar download remain available. The schedule covers 3–6 December 2026.
 - `hindi-draft.md` is still provisional; Hindi site wording has not been approved.
 
 ## Video workflow

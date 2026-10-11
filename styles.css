@@ -1399,6 +1399,131 @@ a:hover {
   text-underline-offset: 3px;
 }
 
+.brand {
+  font-size: calc(1.65rem + 1px);
+}
+
+.main-nav a {
+  font-size: calc(0.72rem + 1px);
+}
+
+.lang-btn {
+  font-size: calc(0.75rem + 1px);
+}
+
+.intro-tag,
+.eyebrow {
+  font-size: calc(0.7rem + 1px);
+}
+
+.hero-subtitle {
+  font-size: clamp(calc(1rem + 1px), calc(2vw + 1px), calc(1.35rem + 1px));
+}
+
+.hero-date {
+  font-size: calc(0.9rem + 1px);
+}
+
+.hero-countdown .countdown-unit strong {
+  font-size: calc(1.2rem + 1px);
+}
+
+.hero-countdown .countdown-unit span {
+  font-size: calc(0.52rem + 1px);
+}
+
+.countdown-unit strong {
+  font-size: calc(1.42rem + 1px);
+}
+
+.countdown-unit span {
+  font-size: calc(0.58rem + 1px);
+}
+
+.detail-label {
+  font-size: calc(0.63rem + 1px);
+}
+
+.wedding-detail strong {
+  font-size: calc(0.87rem + 1px);
+}
+
+.timezone-note {
+  font-size: calc(0.67rem + 1px);
+}
+
+.text-link {
+  font-size: calc(0.77rem + 1px);
+}
+
+.section-intro {
+  font-size: calc(1.15rem + 1px);
+}
+
+.event-time {
+  font-size: calc(0.7rem + 1px);
+}
+
+.event-venue {
+  font-size: calc(0.75rem + 1px);
+}
+
+.event-note {
+  font-size: calc(0.72rem + 1px);
+}
+
+.venue-card p {
+  font-size: calc(0.9rem + 1px);
+}
+
+.button-link {
+  font-size: calc(0.76rem + 1px);
+}
+
+.family-invitation {
+  font-size: calc(1.35rem + 1px);
+}
+
+.family-role {
+  font-size: calc(0.69rem + 1px);
+}
+
+.family-names p {
+  font-size: calc(1.55rem + 1px);
+}
+
+.site-footer {
+  font-size: calc(1.2rem + 1px);
+}
+
+@media (max-width: 760px) {
+  .brand {
+    font-size: calc(1.4rem + 1px);
+  }
+
+  .main-nav a {
+    font-size: calc(0.61rem + 1px);
+  }
+
+  .hero-date {
+    font-size: calc(0.78rem + 1px);
+  }
+
+  .wedding-detail strong {
+    font-size: calc(0.78rem + 1px);
+  }
+}
+
+@media (max-width: 360px) {
+  .brand {
+    font-size: calc(1.25rem + 1px);
+  }
+
+  .main-nav a {
+    font-size: calc(0.56rem + 1px);
+  }
+}
+
 @media (max-width: 760px) {
   .share-wrap {
     align-items: center;

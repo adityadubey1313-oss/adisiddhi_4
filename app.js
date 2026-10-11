@@ -246,21 +246,23 @@ function renderContacts(lang) {
   contactGroups.innerHTML = '';
 
   Object.values(invitationData.contacts).forEach((contact) => {
-    const venue = venues[contact.venueId];
+    const venue = contact.venueId ? venues[contact.venueId] : null;
     const group = document.createElement('section');
     group.className = 'contact-group';
 
     const heading = document.createElement('h3');
-    heading.textContent = getText(venue.name, lang);
+    heading.textContent = contact.label ? getText(contact.label, lang) : getText(venue.name, lang);
     group.appendChild(heading);
 
     const numberList = document.createElement('ul');
-    contact.numbers.forEach((number) => {
+    const entries = contact.people || contact.numbers.map((number) => ({ number }));
+    entries.forEach(({ name, number }) => {
       const item = document.createElement('li');
       const link = document.createElement('a');
+      const personName = getText(name, lang);
       link.href = safePhoneLink(number);
-      link.textContent = number;
-      link.setAttribute('aria-label', `${translations[lang].callNow} ${number}`);
+      link.textContent = personName ? `${personName}: ${number}` : number;
+      link.setAttribute('aria-label', `${translations[lang].callNow} ${personName} ${number}`.trim());
       item.appendChild(link);
       numberList.appendChild(item);
     });
